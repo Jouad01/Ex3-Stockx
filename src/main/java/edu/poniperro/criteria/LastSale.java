@@ -13,8 +13,8 @@ public class LastSale implements Criteria{
     public LastSale(){}
 
     @Override
-    public List<Offer> checkCriteria(Item item){
-        Criteria sales = new Sales();
+    public List<Offer> checkCriteria(Item item){ // item vendria siendo sneaker
+        Criteria sales = new Sales();               // Fallo mio a la hora de elegir nombre
         List<Offer> listaSales = sales.checkCriteria(item);
 
         return listaSales.isEmpty()? List.of() : List.of(listaSales.get(listaSales.size() - 1));

@@ -9,7 +9,7 @@ public class Sneaker implements Item {
     private int sale = 0;
     private int ask = 0;
     private int bid = 0;
-    private List<Offer> offers = new ArrayList<Offer>(); // Poner lista?
+    private List<Offer> offers = new ArrayList<Offer>(); // Poner lista
 
     public Sneaker(String style, String name) {
         this.style = style;

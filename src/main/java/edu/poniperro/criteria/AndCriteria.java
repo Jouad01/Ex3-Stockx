@@ -21,7 +21,7 @@ public class AndCriteria implements Criteria {
         List<Offer> secondCriteria = criteria.checkCriteria(item);
 
         List<Offer> jordan = new ArrayList<Offer>();
-        for (Offer offer: firstCriteria){               // Duda
+        for (Offer offer: firstCriteria){
             if (secondCriteria.contains(offer)) {
                 jordan.add(offer);
             }
