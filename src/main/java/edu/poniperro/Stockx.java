@@ -1,4 +1,9 @@
-package edu.poniperro.app;
+package edu.poniperro;
+
+import edu.poniperro.criteria.*;
+import edu.poniperro.item.*;
+
+import java.util.List;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo
@@ -18,7 +23,7 @@ package edu.poniperro.app;
  */
 
 
-public class AppStockx {
+public class Stockx {
 
     public static void main(String[] args) {
 
