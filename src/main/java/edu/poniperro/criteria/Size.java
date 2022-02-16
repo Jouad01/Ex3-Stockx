@@ -19,7 +19,7 @@ public class Size implements Criteria {
 
         for (Offer offers : item.offers()){
             if (offers.size().equals(size)){
-                tamañoSize.add(offers); // Si la oferta igual que tamaño añade oferta
+                tamañoSize.add(offers); // Si la oferta es igual que tamaño añade oferta
             }
         }
         return tamañoSize;

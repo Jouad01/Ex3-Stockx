@@ -17,10 +17,11 @@ public class Min implements Criteria{
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        Criteria andCriteria = new AndCriteria(criteria, otherCriteria);
+        Criteria AndCriteria = new AndCriteria(criteria, otherCriteria);
 
-        Optional<Offer> offer = andCriteria.checkCriteria(item)
-                .stream().min(Offer::compareTo);        // Lo mismo que en Max pero cambiando max por min
+        Optional<Offer> offer = AndCriteria.checkCriteria(item)
+                .stream()
+                .min(Offer::compareTo);        // Lo mismo que en Max pero cambiando max por min
         return offer.isPresent()? List.of(offer.get()) : List.of();
 
     }
